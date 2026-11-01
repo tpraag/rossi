@@ -1,15 +1,26 @@
 # Auntie Rose
 
-An illustrated reading edition of a family interview, with Rose’s original recorded voice. This sample contains four stories across 17 pages from the opening recording.
+An illustrated reading edition of a family conversation with Rose, Orit and Barry. The edition contains 22 stories across 113 short reading sections, with about 58 minutes of the original voices drawn from all three recordings.
 
-Open `index.html` in a browser to begin with the introduction, then read or listen. The illustrations and audio are included in the file, so the storybook also works offline. Playback follows the paragraphs and turns the pages automatically.
+The welcome page opens the book. Play follows the paragraphs and turns the pages automatically, including between stories and recording parts. The story strip stays at the top; **All stories** opens an illustrated contents page. Manual navigation pauses playback. Laptop layouts keep the reading area and full-width player on one screen; narrow phone screens use a vertical layout.
 
-The reading text is gently edited from the supplied transcript. The original transcript for each story is available under **About the interview**. Watercolor illustrations depict imagined places and objects. Some brief, overlapping replies have approximate highlight timings.
+The established four stories and their 17 reading sections are preserved. A short opening about Vicky’s papers and the later stories extend the edition in interview order. Reading text uses original dialogue with light cleanup of filler and abandoned starts. Meaningful repetitions, questions, uncertainty, humour and family recollections are retained. Story titles are editorial. Some speaker labels in the third supplied transcript are interchanged; clear assignments are corrected in the reading edition. The supplied transcript downloads retain the original labels.
 
-To publish with GitHub Pages, use the **main** branch and the **root** folder in the repository’s Pages settings. Future changes to `index.html` will update the website.
+Paragraph timing is aligned to locally recognized words. Some short or overlapping replies have approximate timing. Selected audio passages preserve the original speech, pauses and other speakers; incidental digressions and recording interruptions are skipped between passages. The complete, uncut recordings remain available in the audio download.
 
-This repository and its GitHub Pages website are public. The recording and transcript are downloadable by visitors. The robots file asks search engines not to index the site; it does not restrict access.
+The book uses 50 watercolor views of imagined places and objects, including 33 new paintings for the expanded edition. No people are depicted. They are artistic memories rather than documentary photographs.
 
-Each of the 17 numbered reading sections has a matching watercolor view. Twelve new paintings join the four chapter paintings and an earlier silver-cabinet detail. The image changes with section navigation and automatic audio page turns. The paintings contain no people.
+## Files and downloads
 
-The introduction includes downloads of the complete interview: all three original Word transcripts plus a combined plain-text copy, and all three original MP3 recordings. These downloads cover the full interview, beyond the four illustrated stories. They are also accessible under **About the interview**. Keep the `downloads` folder alongside `index.html` when distributing the website. The welcome page has a single Begin button.
+Keep `index.html`, `assets`, `media` and `downloads` together. The website uses separate image and audio files so it can load the welcome page quickly. Opening this folder’s `index.html` with all files present also works locally. A separate self-contained downloadable HTML edition is maintained in the source project.
+
+The welcome page and **About the interview** offer:
+
+- All three original Word transcripts and a combined plain-text copy in `downloads/auntie-rose-complete-transcripts.zip`.
+- All three original MP3 recordings, uncut, in `downloads/auntie-rose-complete-recordings.zip`.
+
+## Publishing
+
+GitHub Pages uses the **main** branch and **/ (root)** folder. Pushing changes updates the website at https://tpraag.github.io/rossi/.
+
+This repository and website are public. The robots file and page metadata ask search engines not to index the site; they do not restrict access.
