@@ -127,6 +127,16 @@
       #rose-memoir .rm-utterance blockquote{display:inline;margin:0;line-height:1.48}
       #rose-memoir .rm-quotes{gap:clamp(6px,1.1vh,9px)}
     }
+    @media(min-width:900px){
+      #rose-memoir .rm-controls{column-gap:20px;row-gap:4px}
+      #rose-memoir .rm-player{display:contents}
+      #rose-memoir .rm-player-top{display:flex;grid-column:1;grid-row:1;align-items:center;justify-content:space-between;gap:12px}
+      #rose-memoir .rm-page-steps{grid-column:2;grid-row:1}
+      #rose-memoir .rm-bottom{grid-column:3;grid-row:1}
+      #rose-memoir .rm-audio-seek{grid-column:1/-1;grid-row:2;margin:0;width:100%}
+      #rose-memoir .rm-audio-note{grid-column:1/-1;grid-row:3}
+      #rose-memoir .rm-audio-status{grid-column:1/-1;grid-row:4}
+    }
   </style>
   <div class="rm-top"><span class="rm-mark">Auntie Rose</span><span>Stories in her own words</span><button type="button" class="rm-about-button cursor-interaction">About the interview</button></div>
   <nav class="rm-contents" aria-label="Story contents">
