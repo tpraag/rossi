@@ -9,3 +9,5 @@ The reading text is gently edited from the supplied transcript. The original tra
 To publish with GitHub Pages, use the **main** branch and the **root** folder in the repository’s Pages settings. Future changes to `index.html` will update the website.
 
 This repository and its GitHub Pages website are public. The recording and transcript are downloadable by visitors. The robots file asks search engines not to index the site; it does not restrict access.
+
+Each chapter has a distinct watercolor painting based on its central memory: the silver treasures and family home, a happy childhood, Vicky’s return to dancing, and the shared wartime kitchen. The paintings contain no people.
