@@ -8,7 +8,7 @@ The established four stories and their 17 reading sections are preserved. A shor
 
 Paragraph timing is aligned to locally recognized words. Some short or overlapping replies have approximate timing. Selected audio passages preserve the original speech, pauses and other speakers; incidental digressions and recording interruptions are skipped between passages. The complete, uncut recordings remain available in the audio download.
 
-The book uses 50 watercolor views of imagined places and objects, including 33 new paintings for the expanded edition. No people are depicted. They are artistic memories rather than documentary photographs.
+The book uses 50 watercolor scenes of imagined places and objects. Fifteen scenes now have a quieter alternate painting, with all original paintings retained. No people are depicted. They are artistic memories rather than documentary photographs.
 
 ## Files and downloads
 
@@ -24,3 +24,7 @@ The welcome page and **About the interview** offer:
 GitHub Pages uses the **main** branch and **/ (root)** folder. Pushing changes updates the website at https://tpraag.github.io/rossi/.
 
 This repository and website are public. The robots file and page metadata ask search engines not to index the site; they do not restrict access.
+
+## Illustration choices
+
+Fifteen scenes have quieter watercolor versions with everyday details and no added floral decoration. They are the default for those scenes. In **About the interview → Illustrations**, each new painting can be switched to its original independently. Bulk buttons select all new versions or all originals. Choices are saved on the current device and do not interrupt playback. All 50 original image files remain unchanged at their original paths; the new files are in `assets/quiet-v2`.
