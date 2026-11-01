@@ -1,6 +1,6 @@
 # Auntie Rose
 
-An illustrated reading edition of a family conversation with Rose, Orit and Barry. The edition contains 22 stories across 113 short reading sections, with about 58 minutes of the original voices drawn from all three recordings.
+An illustrated reading edition of a family conversation with Rose, Orit and Barry. The edition contains 22 stories across 114 short reading sections, with about 58 minutes of the original voices drawn from all three recordings.
 
 The welcome page opens the book. Play follows the paragraphs and turns the pages automatically, including between stories and recording parts. The story strip stays at the top; **All stories** opens an illustrated contents page. Manual navigation pauses playback. Laptop layouts keep the reading area and full-width player on one screen; narrow phone screens use a vertical layout.
 
@@ -28,3 +28,5 @@ This repository and website are public. The robots file and page metadata ask se
 ## Illustration choices
 
 Fifteen scenes have quieter watercolor versions with everyday details and no added floral decoration. They are the default for those scenes. In **About the interview → Illustrations**, each new painting can be switched to its original independently. Bulk buttons select all new versions or all originals. Choices are saved on the current device and do not interrupt playback. All 50 original image files remain unchanged at their original paths; the new files are in `assets/quiet-v2`.
+
+The first reading section restores Orit’s original spoken introduction to Vicky’s divorce papers, followed by “Go on, Rose.” The opening explanation is spoken in Hebrew; its English reading text follows the supplied transcript’s translation and is labelled accordingly. The remaining dialogue and interview order are unchanged.
