@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex, nofollow, noarchive"><title>Auntie Rose — Stories in her own voice</title>
+<html lang="en"><head><meta name="theme-color" content="#f7f1e5"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex, nofollow, noarchive"><title>Auntie Rose — Stories in her own voice</title>
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; media-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'">
 <style>html,body{margin:0;padding:0;background:#f7f1e5;color:#343c32} @media(min-width:900px) and (min-height:520px){html,body{height:100%;overflow:hidden}}</style></head><body>
 <script>
@@ -201,6 +201,70 @@
     #rose-memoir .rm-art-option[aria-pressed="true"]{border-color:var(--moss);background:#eeeddf;box-shadow:0 0 0 1px var(--moss)}
     #rose-memoir .rm-art-thumb{display:block;width:100%;aspect-ratio:1.5;background-position:center;background-repeat:no-repeat;background-size:contain}
     @media(max-width:520px){#rose-memoir .rm-art-grid{grid-template-columns:1fr}}
+
+    /* Phone reading room: painting, scrollable transcript, persistent transport. */
+    #rose-memoir .rm-reading-toggle{display:none}
+    @media(max-width:899px){
+      html,body{height:100%;overflow:hidden;overscroll-behavior:none}
+      #rose-memoir{height:100vh;height:100dvh;max-width:none;display:grid;grid-template-rows:40px 44px minmax(0,1fr) auto;gap:6px;padding:env(safe-area-inset-top,0px) 14px max(8px,env(safe-area-inset-bottom,0px));--reading-size:18px}
+      #rose-memoir .rm-top{margin:0;min-width:0;gap:8px}
+      #rose-memoir .rm-home{font-size:23px;min-height:40px}
+      #rose-memoir .rm-about-button{min-height:40px;font-size:11px}
+      #rose-memoir .rm-contents{margin:0;padding:0;border:0;gap:4px}
+      #rose-memoir .rm-chapters .rm-chapter{flex-basis:150px;min-height:44px;border-radius:12px;padding:7px 10px}
+      #rose-memoir .rm-scroll-back,#rose-memoir .rm-scroll-forward{display:none}
+      #rose-memoir .rm-open-index{min-height:44px;border-radius:12px;padding:8px 10px}
+      #rose-memoir .rm-spread,#rose-memoir .rm-spread.is-dense{height:100%;min-height:0;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(120px,.95fr) minmax(160px,1.05fr);gap:8px}
+      #rose-memoir .rm-picture{height:100%;max-width:700px;width:100%;margin:0 auto;align-self:stretch}
+      #rose-memoir .rm-picture .rm-scene{height:100%;max-height:none;aspect-ratio:auto}
+      #rose-memoir .rm-picture figcaption{display:none}
+      #rose-memoir .rm-words{position:relative;align-self:stretch;max-width:none;min-height:0;display:grid;grid-template-rows:auto auto minmax(0,1fr);padding:14px 16px 6px;border:1px solid var(--rule);border-radius:20px 20px 8px 8px;background:rgba(255,255,255,.45);overflow:hidden}
+      #rose-memoir .rm-kicker{min-height:27px;padding-right:112px;margin:0;font-size:9px;letter-spacing:1px}
+      #rose-memoir .rm-reading-toggle{display:block;position:absolute;right:10px;top:4px;min-height:44px;padding:8px 6px;font-size:11px;border:0;color:var(--moss)}
+      #rose-memoir h2{font-size:21px;line-height:1.15;margin:0 0 10px;letter-spacing:-.3px}
+      #rose-memoir .rm-quotes{min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding:6px 7px 22px;gap:14px;scroll-padding:12px}
+      #rose-memoir .rm-attribution{font-size:10px;letter-spacing:.6px}
+      #rose-memoir .rm-utterance blockquote{font-size:18px;line-height:1.5}
+      #rose-memoir .rm-spread.is-text-expanded{grid-template-rows:minmax(60px,.22fr) minmax(200px,1.78fr)}
+      #rose-memoir .rm-controls{grid-template-columns:minmax(0,1fr) auto;grid-template-rows:44px 22px 44px;gap:2px 10px;margin:0;padding-top:4px;background:var(--paper);min-width:0}
+      #rose-memoir .rm-player{display:contents}
+      #rose-memoir .rm-player-top{display:flex;grid-column:1/-1;grid-row:1;align-items:center;justify-content:space-between;gap:8px}
+      #rose-memoir .rm-play{min-height:44px;border-radius:12px;padding:10px 16px;font-size:13px}
+      #rose-memoir .rm-audio-time{font-size:11px}
+      #rose-memoir .rm-audio-seek{grid-column:1/-1;grid-row:2;margin:0;height:22px;width:100%}
+      #rose-memoir .rm-audio-note{display:none}
+      #rose-memoir .rm-audio-status{grid-column:1/-1;font-size:11px;grid-row:4}
+      #rose-memoir .rm-page-steps{grid-column:1;grid-row:3;justify-content:flex-start;gap:2px;min-width:0;height:44px}
+      #rose-memoir .rm-page-step{min-height:44px;min-width:34px;flex-basis:34px;border-radius:10px;padding:5px}
+      #rose-memoir .rm-bottom{grid-column:2;grid-row:3;justify-content:flex-end}
+      #rose-memoir .rm-actions{gap:4px}
+      #rose-memoir .rm-actions button{min-height:44px;padding:8px;font-size:12px;border-radius:10px}
+      #rose-memoir.is-intro{display:block;height:100%;overflow-y:auto;padding-bottom:max(24px,env(safe-area-inset-bottom,0px));overscroll-behavior:contain}
+      #rose-memoir .rm-welcome{gap:18px;padding:8px 0 20px;max-width:560px}
+      #rose-memoir .rm-cover-art{aspect-ratio:1.3;max-height:40dvh}
+      #rose-memoir h1{font-size:42px;margin-bottom:14px}
+      #rose-memoir .rm-intro-copy{font-size:14px;margin-bottom:18px}
+      #rose-memoir .rm-begin{width:100%;min-height:48px;border-radius:12px}
+      #rose-memoir .rm-downloads{margin-top:20px}
+      #rose-memoir .rm-download-links{gap:10px 20px}
+      #rose-memoir .rm-download-link{min-height:48px}
+      #rose-memoir .rm-story-index,#rose-memoir .rm-about-dialog{max-height:calc(100dvh - 24px);width:calc(100vw - 24px);border-radius:20px;overscroll-behavior:contain}
+      #rose-memoir .rm-close-index,#rose-memoir .rm-close-about{min-height:44px}
+    }
+    @media(max-width:359px){#rose-memoir{padding-left:10px;padding-right:10px}#rose-memoir .rm-page-step{min-width:30px;flex-basis:30px}#rose-memoir .rm-actions button{font-size:11px;padding:6px}}
+    @media(max-width:899px) and (max-height:500px) and (orientation:landscape){
+      #rose-memoir{grid-template-rows:32px 40px minmax(0,1fr) auto;gap:2px}
+      #rose-memoir .rm-spread,#rose-memoir .rm-spread.is-dense,#rose-memoir .rm-spread.is-text-expanded{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);grid-template-rows:minmax(0,1fr)}
+      #rose-memoir .rm-reading-toggle{display:none}
+      #rose-memoir .rm-words{padding-top:10px}
+      #rose-memoir .rm-kicker{min-height:20px;padding-right:0}
+      #rose-memoir h2{font-size:18px;margin-bottom:5px}
+      #rose-memoir .rm-controls{grid-template-columns:minmax(0,1fr) auto;grid-template-rows:44px 20px;column-gap:12px}
+      #rose-memoir .rm-player-top{grid-column:1;grid-row:1}
+      #rose-memoir .rm-bottom{grid-column:2;grid-row:1}
+      #rose-memoir .rm-page-steps{display:none}
+      #rose-memoir .rm-audio-seek{grid-row:2}
+    }
   </style>
   <div class="rm-top"><button type="button" class="rm-mark rm-home cursor-interaction" aria-label="Auntie Rose — return to introduction">Auntie Rose</button><span>Stories in her own words</span><button type="button" class="rm-about-button cursor-interaction">About the interview</button></div>
   <section class="rm-welcome" aria-labelledby="rose-welcome-title">
@@ -217,7 +281,7 @@
   </nav>
   <section class="rm-spread" aria-live="polite" aria-atomic="true" hidden>
     <figure class="rm-picture"><div class="rm-scene" role="img" aria-label="An imagined watercolor of a north London family home" style="background-position:0% 0%"></div><figcaption>An imagined memory in watercolor</figcaption></figure>
-    <div class="rm-words"><p class="rm-kicker">Rose</p><h2 tabindex="-1">“I had a wonderful childhood.”</h2><div class="rm-quotes"></div></div>
+    <div class="rm-words"><button type="button" class="rm-reading-toggle" aria-expanded="false" aria-controls="rose-reading-text">Expand text ↗</button><p class="rm-kicker">Rose</p><h2 tabindex="-1">“I had a wonderful childhood.”</h2><div class="rm-quotes" id="rose-reading-text" tabindex="0" role="region" aria-label="Interview text"></div></div>
   </section>
   <footer class="rm-controls" hidden>
   <section class="rm-player" aria-label="Original recording for this page">
@@ -347,7 +411,26 @@
       });
       const paragraphs=root.querySelectorAll('.rm-utterance');
       paragraphs.forEach((el,i)=>el.classList.toggle('is-speaking',i===active));
+      if(active!==activeParagraph)revealSpeakingParagraph(active);
       activeParagraph=active;
+    }
+
+
+    const readingToggle=root.querySelector('.rm-reading-toggle');
+    const mobileReading=matchMedia('(max-width:899px)');
+    readingToggle.addEventListener('click',()=>{
+      const expanded=root.querySelector('.rm-spread').classList.toggle('is-text-expanded');
+      readingToggle.setAttribute('aria-expanded',String(expanded));
+      readingToggle.textContent=expanded?'More painting ↗':'Expand text ↗';
+    });
+    function revealSpeakingParagraph(index){
+      if(!mobileReading.matches||index<0)return;
+      const area=root.querySelector('.rm-quotes'),el=area.children[index];
+      if(!el)return;
+      const box=area.getBoundingClientRect(),line=el.getBoundingClientRect();
+      if(line.top<box.top||line.bottom>box.bottom){
+        area.scrollTo({top:area.scrollTop+line.top-box.top-8,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});
+      }
     }
 
     const fmt=s=>Math.floor(Math.max(0,s)/60)+':'+String(Math.floor(Math.max(0,s)%60)).padStart(2,'0');
@@ -403,7 +486,7 @@
       requestAnimationFrame(()=>{const selected=steps.querySelector('[aria-current="page"]');if(!selected)return;const a=selected.getBoundingClientRect(),b=steps.getBoundingClientRect();if(a.left<b.left)steps.scrollLeft+=a.left-b.left;else if(a.right>b.right)steps.scrollLeft+=a.right-b.right;});
       root.querySelector('.rm-kicker').textContent='Story '+(p.story+1)+' · '+p.part+' of '+p.total;
       root.querySelector('h2').textContent=p.title;
-      const area=root.querySelector('.rm-quotes');area.replaceChildren();
+      const area=root.querySelector('.rm-quotes');area.replaceChildren();area.scrollTop=0;activeParagraph=-1;
       p.lines.forEach(([speaker,text])=>{
         const group=document.createElement('div');group.className='rm-utterance';
         const name=document.createElement('p');name.className='rm-attribution';name.textContent=speaker;

@@ -30,3 +30,7 @@ This repository and website are public. The robots file and page metadata ask se
 Fifteen scenes have quieter watercolor versions with everyday details and no added floral decoration. They are the default for those scenes. In **About the interview → Illustrations**, each new painting can be switched to its original independently. Bulk buttons select all new versions or all originals. Choices are saved on the current device and do not interrupt playback. All 50 original image files remain unchanged at their original paths; the new files are in `assets/quiet-v2`.
 
 The first reading section restores Orit’s original spoken introduction to Vicky’s divorce papers, followed by “Go on, Rose.” The opening explanation is spoken in Hebrew; its English reading text follows the supplied transcript’s translation and is labelled accordingly. The remaining dialogue and interview order are unchanged.
+
+## Phone layout
+
+Phones use a full-height reading view: a prominent painting, a scrollable transcript panel, and persistent audio controls with a full-width seek bar. **Expand text** gives the transcript more room; **More painting** restores the larger illustration. Speaking paragraphs scroll into view as the original recording plays. Landscape phones place the painting and text side by side. The welcome screen and downloads remain available from Auntie Rose at the top.
